@@ -1,5 +1,318 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  background-image: var(--background-url);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: auto;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+}
+
+.container {
+  margin: 0 20px 0 20px;
+}
+
+/*
+  Специально для тёмной темы при наличии класса,
+  здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
+.header {
+  display: flex;
+  flex-direction: column;
+  flex-direction: column;
+  align-items: end;
+}
+
+.heared-decor-wrapper {
+  display: flex;
+}
+
+.rec {
+  text-transform: uppercase;
+  display: inline-block;
+  color: var(--accent-color);
+  padding-right: 10px;
+  padding-top: 15px;
+}
+
+.header__theme-menu {
+  margin: 11% 3% 10% 0;
+  width: 70px;
+  height: 26px;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+}
+
+.header__theme-menu-button {
+  width: 70px;
+  height: 26px;
+  background: transparent;
+  background-color: transparent;
+  cursor: pointer;
+  display: block;
+  border: none;
+  color: var(--accent-color)
+}
+
+.h1 {
+  display: block;
+  width: 95%;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  color:  #DB00FF;
+  text-shadow: 4px 4px 0 var(--accent-color);
+  font-weight: 700;
+  line-height: 96px;
+  font-family: 'IBM Plex mono';
+}
+
+.header-text {
+  font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
+  font-weight: 700;
+  line-height: 23px;
+  font-family: 'IBM Plex mono';
+  width: 95%;
+  background-color: var(--accent-color);
+  color: #000;
+  margin-bottom: 40px;
+}
+
+.title {
+  font-family: 'IBM Plex mono';
+  font-weight: 700;
+  font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
+  line-height: 23px;
+}
+
+.title-accent {
+  color: var(--accent-color);
+}
+
+.card-title {
+  color: #000028;
+  background-color: var(--accent-color);
+}
+
+.card-text {
+  font-family: 'IBM Plex mono';
+  font-weight: 400;
+  font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
+  line-height: 23px;
+  color: var(--text-color);
+}
+
+.link-accent {
+  text-shadow: 1px 1px 0 var(--accent-color);
+  color: var(--link-hover);
+}
+
+.section-link {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.section-link:hover .link-accent {
+  text-decoration: underline;
+  color: var(--text-color);
+}
+
+/* .section {
+  margin: 0 20px 0 20px;
+} */
+
+.link-decor-none {
+  text-decoration: none;
+}
+
+.images-container {
+  display: grid;
+  grid-template-columns: 355px;
+  grid-template-rows: 142px 355px 237px 355px 237px;
+  gap: 10px;
+}
+
+.footer {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  min-height: 667px;
+  justify-content: space-between;
+}
+
+.angle-end {
+  position: relative;
+  align-self: flex-end;
+  width: 25px;
+  height: 25px;
+  border-top: 2px solid;
+  border-right: 2px solid;
+  /* border-style: solid; */
+  border-color: var(--angle);
+  margin-top: 10px;
+}
+
+
+
+.angle-end-accent::before {
+  content: '';
+  position: absolute;
+  box-shadow: 0px 5px 10px 0px var(--accent-color);
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  width: 9px;
+  height: 9px;
+  top: 9px;
+  right: 9px;
+}
+
+/* font-family: 'IBM Plex Mono', sans-serif;
+  font-weight: 400;
+  font-size: clamp(1.125rem, NaNrem + NaNvw, 1.125rem);
+  line-height: 23.4px;
+  text-transform: uppercase;
+  */
+
+.angle-start {
+  align-self: flex-start;
+  width: 25px;
+  height: 25px;
+  border-bottom: 2px solid;
+  border-left: 2px solid;
+  border-color: var(--angle);
+  margin-bottom: 10px;
+}
+
+.footer-text {
+  display: block;
+  width: 95%;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  color:  #DB00FF;
+  text-shadow: 4px 4px 0 var(--accent-color);
+  font-weight: 700;
+  line-height: 96px;
+  font-family: 'IBM Plex mono';
+  margin-top: 55px;
+  text-align: center;
+}
+
+.img-section {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+/* .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+} */
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .h1 {
+    align-self: flex-start;
+  }
+
+  .header-text {
+    width: 364px;
+    margin-right: 20px;
+    margin-top: 162px;
+    margin-bottom: 183px;
+  }
+
+  .title-accent-wrap {
+    width: 236px;
+  }
+
+  .section-wrap {
+    display: flex;
+    gap: 20px;
+  }
+
+  .card-container-wrap {
+    width: 472px;
+  }
+
+  .section {
+    margin: 0 20px 0 20px;
+  }
+
+  .images-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 142px 355px 237px;
+  }
+
+  .sunset-column, .street-column{
+    grid-column: span 2;
+  }
+
+  .ice-cream-row, .tape-row {
+    grid-row: span 2;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .h1 {
+    align-self: flex-start;
+  }
+
+  /* .title {
+    width: 31vw;
+  } */
+
+  .header-text {
+    width: 491px;
+    margin-top: 162px;
+    margin-bottom: 183px;
+  }
+
+  .title-accent {
+    width: 31vw;
+  }
+
+  .section-wrap {
+    display: flex;
+    justify-content: right;
+  }
+
+  .card-container-wrap {
+    width: 62vw;
+  }
+
+  .images-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 142px 355px 237px;
+  }
+  
+
+  .sunset-column, .street-column{
+    grid-column: span 2;
+  }
+
+  .ice-cream-row, .tape-row {
+    grid-row: span 2;
+  }
+
+  .desctop-wrapper {
+    display: flex;
+    gap: 20px;
+  }
+/* сохраните этот селектор в приведённом виде.
+  Так стили написанные ниже будут иметь больший вес,
+  чем стили в медиазапросе предпочтений пользователя
+*/
 }
