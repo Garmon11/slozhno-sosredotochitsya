@@ -8,11 +8,14 @@
   --background-url: url(../images/cover-image-dark.png);
   --angle: var(--accent-color);
   --text-color: #F1B2CE;
+  --font: 'IBM Plex mono', sans-serif;
+  --buttonActive: #ff0070;
+  --background-color: #000028;
 }
 
 /* светлая тема */
-.theme_light {
+/* .theme_light {
   --background-url: url(../images/cover-image-light.png);
   --angle: black;
   --text-color: #353430;
-}
+} */
