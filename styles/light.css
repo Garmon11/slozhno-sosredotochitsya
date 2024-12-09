@@ -23,8 +23,11 @@
 
 .page.theme_light {
   .title-accent {
-    margin-top: 10px;
     color: var( --text-color);
+  }
+
+  .rec {
+    display: none;
   }
 
   .header-text, card-title {
@@ -32,7 +35,11 @@
     color: var( --text-color);
   }
 
-  .header__theme-menu {
+  .header__theme-menu-button {
+    color: var(--text-color);
+  }
+
+  /* .header__theme-menu {
     padding-top: 39px;
   }
 
@@ -46,7 +53,7 @@
 
   .title-accent-wrap {
     margin-top: 49px;
-  }
+  } */
 
   .h1 {
     color: #FFC2E6;
@@ -61,37 +68,50 @@
     outline: none;
   }
 
+  .header__theme-menu::before {
+    content: 'rec';
+    position: absolute;
+    text-transform: uppercase;
+    width: 33px;
+    height: 26px;
+    color: var(--accent-color);
+    font-family: 'IBM Plex mono', sans-serif;
+    top: -57%;
+    left: 45%;
+    display: none;
+  }
+
+  .header__theme-menu::after {
+    content: '';
+    position: absolute;
+    box-shadow: 0px 0px 8px 4px var(--accent-color);
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    width: 9px;
+    height: 9px;
+    top: -50%;
+    right: -16%;
+    display: none;
+  }
+
   .section-link:focus {
     border: 1px solid var(--text-color);
     outline: none;
-  }
-
-  .rec {
-    display: none;
   }
   
   .angle-end-accent::before {
     display: none;
   }
 
-  .images-container {
-    grid-template-rows: 140px 348px 237px 355px 237px;
-    gap: 10px;
-  }
-
-  .footer {
-    margin-top: -19px;
-  }
-
   .footer-text {
-    margin-top: 121px;
+    color: #FFC2E6;
   }
 
-  .footer::before {
-    top: 104%;
+  .footer::before, .footer::after, .header::before, .header::after {
+    border-color: var(--text-color);
   }
 
-  @media (width >= 1024px) {
+  /* @media (width >= 1024px) {
     .heared-decor-wrapper {
       display: block;
       width: 100%;
@@ -150,7 +170,7 @@
       margin-top: 298px;
       margin-left: 27px;
     }
-  }
+  } */
 }
 
 @media (prefers-color-scheme: light) {
@@ -190,7 +210,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+/* @media (768 <= width < 1024) {
   .tablet-title {
     padding-top: 20px;
   }
@@ -213,8 +233,8 @@
 
   .footer-text {
     margin-top: 147px;
-  }
-}
+  } */
+/* } */
 
 /* .page.theme_light {
   сохраните этот селектор в приведённом виде.
