@@ -116,7 +116,7 @@
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--buttonActive);
+  border: 2px solid var(--buttonActive);
 }
 
 .h1 {
@@ -154,6 +154,10 @@
 
 .title-accent {
   color: var(--accent-color);
+}
+
+.title-tablet-card {
+  font-weight: 400;
 }
 
 .card-title {
@@ -213,6 +217,7 @@
 }
 
 .footer {
+  height: 100vh;
   position: relative;
   min-height: 668px;
   display: flex;
@@ -283,16 +288,6 @@
 
   .decorated-zone {
     margin-bottom: 53px;
-  }
-
-  .header__theme-menu::before {
-    top: -156%;
-    left: 50%;
-  }
-
-  .header__theme-menu::after {
-    top: -153px;
-    right: -17px;
   }
 
   .h1 {
@@ -421,6 +416,10 @@
 }
 
 @media (width >= 1024px) {
+  .page {
+    max-width: 1024px;
+  }
+
   .decorated-zone {
     min-height: 768px;
     background-size: cover;
@@ -446,16 +445,6 @@
     margin: 2% 38.5% 0 0;
     padding: 0;
     width: fit-content;
-  }
-
-  .header__theme-menu::before {
-    top: 1px;
-    right: 1px;
-  }
-
-  .header__theme-menu::after {
-    top: 27%;
-    right: -160.6%;
   }
 
   .header::before {
@@ -488,6 +477,10 @@
     flex-direction: column;
     gap: 20px;
   }
+  
+  .section-img .card-title {
+    margin-bottom: 20px;
+  }
 
   .section-wrap {
     display: flex;
@@ -504,7 +497,7 @@
   }
 
   .title-accent {
-    width: 31vw;
+    width: 315px;
   }
 
   .card-title {
@@ -517,17 +510,22 @@
   }
 
   .card-container-wrap {
-    width: 63.5vw;
+    width: 649px;
   }
 
-  .card-container {
-    min-width: 315px;
+  .card-desctop {
+    width: 32%;
   }
 
   .images-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 267px 315px 433px;
+    grid-template-rows: 260px 315px 433px;
+  }
+
+  .street-column {
+    margin-top: 5px;
+    height: 428px;
   }
   
   .sunset-column, .street-column{
@@ -540,8 +538,8 @@
 
   .desctop-wrapper {
     display: flex;
-    flex-wrap: nowrap;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 19px;
     margin-top: 19px;
   }
 
@@ -552,14 +550,7 @@
 
   .footer-text {
     font-size: 157px;
-
+    margin-top: 4%;
+    margin-left: 2.5%;
   }
-
-  /* .footer::before {
-
-  }
-
-  .footer::after {
-
-  } */
 }
