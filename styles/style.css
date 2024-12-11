@@ -31,7 +31,7 @@
 }
 
 .header::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 22px;
   height: 22px;
@@ -42,7 +42,7 @@
 }
 
 .header::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 22px;
   height: 22px;
@@ -60,11 +60,11 @@
   margin-top: 10px;
   margin-right: 6px;
   min-width: 53px;
-  font-family: 'IBM Plex mono', sans-serif;
+  font-family: "IBM Plex mono", sans-serif;
 }
 
 .rec::after {
-  content: '';
+  content: "";
   display: inline-block;
   margin-left: 12px;
   box-shadow: 0px 0px 8px 4px var(--accent-color);
@@ -103,7 +103,7 @@
   cursor: pointer;
   display: block;
   border: none;
-  color: var(--accent-color)
+  color: var(--accent-color);
 }
 
 .header__theme-menu-button:hover {
@@ -123,7 +123,7 @@
   display: block;
   width: 95%;
   font-size: 116px;
-  color:  #DB00FF;
+  color: #db00ff;
   text-shadow: 4px 4px 0 var(--accent-color);
   font-weight: 700;
   line-height: 96px;
@@ -222,11 +222,11 @@
   min-height: 668px;
   display: flex;
   flex-direction: column;
-  justify-content: center
+  justify-content: center;
 }
 
 .footer::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 22px;
   height: 22px;
@@ -237,7 +237,7 @@
 }
 
 .footer::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 22px;
   height: 22px;
@@ -251,7 +251,7 @@
   display: block;
   width: 95%;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  color:  #DB00FF;
+  color: #db00ff;
   text-shadow: 4px 4px 0 var(--accent-color);
   font-weight: 700;
   line-height: 96px;
@@ -266,7 +266,6 @@
   object-fit: cover;
   object-position: center;
 }
-
 
 @media (width >= 768px) {
   .page {
@@ -294,8 +293,8 @@
     margin: 98px 57px 0 0;
     font-size: 120px;
   }
-  
-  .title  {
+
+  .title {
     margin-top: 5px;
   }
 
@@ -309,8 +308,8 @@
     right: 0;
     top: 20px;
   }
-  
-  .header::after {  
+
+  .header::after {
     left: 0;
     bottom: 20px;
   }
@@ -329,7 +328,7 @@
   }
 
   .header__theme-menu {
-    margin:25% 3.5% 11% 0;
+    margin: 25% 3.5% 11% 0;
     padding-left: 25px;
     padding-top: 5px;
   }
@@ -389,7 +388,7 @@
     position: relative;
     min-height: 1024px;
   }
-  
+
   .footer-text {
     text-align: center;
     margin-left: 2%;
@@ -406,11 +405,13 @@
     bottom: 0;
   }
 
-  .sunset-column, .street-column{
+  .sunset-column,
+  .street-column {
     grid-column: span 2;
   }
 
-  .ice-cream-row, .tape-row {
+  .ice-cream-row,
+  .tape-row {
     grid-row: span 2;
   }
 }
@@ -477,7 +478,7 @@
     flex-direction: column;
     gap: 20px;
   }
-  
+
   .section-img .card-title {
     margin-bottom: 20px;
   }
@@ -527,12 +528,14 @@
     margin-top: 5px;
     height: 428px;
   }
-  
-  .sunset-column, .street-column{
+
+  .sunset-column,
+  .street-column {
     grid-column: span 2;
   }
 
-  .ice-cream-row, .tape-row {
+  .ice-cream-row,
+  .tape-row {
     grid-row: span 2;
   }
 
