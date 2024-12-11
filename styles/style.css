@@ -186,12 +186,11 @@
 }
 
 .section-img .card-title {
-  margin-bottom: 13px;
+  margin-bottom: 8px;
 }
 
 .section-link {
   text-shadow: 1px 1px 0 var(--accent-color);
-  color: var(--link-hover);
   color: var(--text-color);
   text-decoration: none;
 }
@@ -212,7 +211,7 @@
 .images-container {
   display: grid;
   grid-template-columns: 355px;
-  grid-template-rows: 140px 355px 237px 355px 237px;
+  grid-template-rows: 142px 355px 237px 355px 237px;
   gap: 10px;
 }
 
@@ -282,7 +281,7 @@
   }
 
   .container {
-    margin: 0 20px 0 20px;
+    margin: 0 20px;
   }
 
   .decorated-zone {
@@ -317,10 +316,6 @@
   .rec::after {
     top: 28px;
     right: 2px;
-  }
-
-  .container {
-    margin: 0 20px;
   }
 
   .tablet-title {
